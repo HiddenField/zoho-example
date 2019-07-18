@@ -39,7 +39,7 @@ Set them by placing them in a `.env` file in the project root, for example:
 TOKEN=28cfaaddcc11837a
 ORG_ID=2233432
 SUB_ID=133918191222
-START_PRICE=0
+START_PRICE=2
 END_PRICE=20
 DELAY=5
 ```
