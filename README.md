@@ -31,7 +31,7 @@ The following environment variables are available:
 * `SUB_ID` - The ID of the subscription being updated.
 * `START_PRICE` - The price to begin updating the subscription at.
 * `END_PRICE` - The price to finish updating the subscription at.
-* `DELAY` - The delay between each update in sections.
+* `DELAY` - The delay between each update in seconds.
 
 Set them by placing them in a `.env` file in the project root, for example:
 
@@ -43,4 +43,3 @@ START_PRICE=0
 END_PRICE=20
 DELAY=5
 ```
-
