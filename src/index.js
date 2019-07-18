@@ -68,12 +68,12 @@ function updateSubscription(subscriptionId, price) {
 function recordPayment(customerId, invoiceId, amount) {
   return request('POST', '/api/v1/payments', {
     customer_id: customerId,
-	  payment_mode: 'creditcard',
-	  amount,
-	  invoices: [{
-			invoice_id: invoiceId,
-			amount_applied: amount,
-		}],
+    payment_mode: 'creditcard',
+    amount,
+    invoices: [{
+      invoice_id: invoiceId,
+      amount_applied: amount,
+    }],
   });
 }
 
