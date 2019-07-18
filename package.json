@@ -1,0 +1,12 @@
+{
+  "name": "zoho-test",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node --experimental-modules src/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^8.0.0"
+  }
+}
