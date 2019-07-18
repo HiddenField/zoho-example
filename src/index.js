@@ -26,7 +26,7 @@ function request(method, path, body) {
       headers: {
         'content-type': 'application/json',
         'x-com-zoho-subscriptions-organizationid': ORG_ID,
-        authorization: `Zohoauthtoken ${TOKEN}`,
+        authorization: `Zoho-authtoken ${TOKEN}`,
       },
     }, (res) => {
       console.log(`PATH: ${path}`);

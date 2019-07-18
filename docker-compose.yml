@@ -3,4 +3,7 @@ services:
   server:
     build: .
     volumes:
-      - ./:/usr/src/app
+      - ./package.json:/usr/src/app/package.json
+      - ./yarn.lock:/usr/src/app/yarn.lock
+      - ./.env:/usr/src/app/.env
+      - ./src:/usr/src/app/src
