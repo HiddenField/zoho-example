@@ -85,11 +85,15 @@ async function getLatestInvoices(subscriptionId) {
 }
 
 async function main() {
-  for (let i = START_PRICE; i <= END_PRICE; i += 2) {
+  const startPrice = parseInt(START_PRICE, 10);
+  const endPrice = parseInt(END_PRICE, 10);
+  const delay = parseInt(DELAY, 10);
+
+  for (let i = startPrice + 2; i <= endPrice; i += 2) {
     const { subscription } = await updateSubscription(SUB_ID, `${i}`);
     const [ invoice ] = await getLatestInvoices(SUB_ID);
     await recordPayment(subscription.customer.customer_id, invoice.invoice_id, `${invoice.balance}`);
-    await nap(DELAY);
+    await nap(delay);
   }
 }
 
