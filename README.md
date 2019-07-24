@@ -29,7 +29,7 @@ The following environment variables are available:
 * `TOKEN` - The auth token (with `Zoho-authtoken` prefix).
 * `ORG_ID` - The organization ID.
 * `SUB_ID` - The ID of the subscription being updated.
-* `START_PRICE` - The price to begin updating the subscription at.
+* `START_PRICE` - The current price of the subscription.
 * `END_PRICE` - The price to finish updating the subscription at.
 * `DELAY` - The delay between each update in seconds.
 
@@ -39,7 +39,7 @@ Set them by placing them in a `.env` file in the project root, for example:
 TOKEN=28cfaaddcc11837a
 ORG_ID=2233432
 SUB_ID=133918191222
-START_PRICE=2
+START_PRICE=0
 END_PRICE=20
 DELAY=5
 ```
